@@ -3,7 +3,7 @@ package Lesson7;
  * Java Core. Homework #7
  *
  * @author Bakeshko Daria
- * @version 22.04.22
+ * @version 02.04.22
  *
  */
 import com.fasterxml.jackson.databind.JsonNode;
@@ -165,13 +165,16 @@ public class AccuweatherModel implements WeatherModel {
     }
 
     public static void main(String[] args) throws IOException {
-        AccuweatherModel accuweatherModel = new AccuweatherModel();
-        accuweatherModel.getWeather("Saint Petersburg", Period.NOW);
+        //AccuweatherModel accuweatherModel = new AccuweatherModel();
+        //accuweatherModel.getWeather("Saint Petersburg", Period.NOW);
 
-        AccuweatherModel accuweatherModel5Days = new AccuweatherModel();
-        accuweatherModel5Days.getWeather("Saint Petersburg", Period.FIFE_DAYS);
+        //AccuweatherModel accuweatherModel5Days = new AccuweatherModel();
+        //accuweatherModel5Days.getWeather("Saint Petersburg", Period.FIFE_DAYS);
 
         //accuweatherModel.detectCityKey("Moscow");
+
+        UserInterfaceView userIntefaceView = new UserInterfaceView();
+        userIntefaceView.runInterface();
 
 
     }
